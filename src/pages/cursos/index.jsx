@@ -1,81 +1,75 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row,Col,Container,Card } from 'react';
+
+import { Container,nav,button } from 'react';
 
 const Cursos = () => {
     return (
         <div>
-
-            <Carousel>
-  <Carousel.Item interval={1000}>
-    <img
-      className="d-block w-100"
-      src="https://cdn.ome.lt/2PX7RRWWQH_yKRjJBQn5KHa8rkA=/1200x630/smart/extras/conteudos/pacman256.jpg"
-      alt="Evento 1"
-    />
-    <Carousel.Caption>
-      <h3>Joge com o Pic-Men</h3>
-      <p>aprenda matematica, jogando Pic-Men</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item interval={500}>
-    <img
-      className="d-block w-100"
-      src="https://static1.purebreak.com.br/articles/9/42/39/@/23981-catalogar-todos-os-jogos-eletronicos-opengraph_1200-1.jpg"
-      alt="Evento 2"
-    />
-    <Carousel.Caption>
-      <h3>Adote o habito de jogar como ensino</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  
-</Carousel>
-      
-      <Container>
-        <Row>
-          <Col>
-            <div className="card" style={{width : '18pm'} } >
-              <img src="https://blog.teclogica.com.br/wp-content/uploads/2017/10/gamifica%C3%A7%C3%A3o-nas-empresas.png" className="card-img-top" alt="imagem sobre a gamificação"/>
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-          </div> 
-          </Col>
-            
-
-          <Col>
-          <div className="card" style={{width : '18pm' }} >
-              <img src="https://blog.teclogica.com.br/wp-content/uploads/2017/10/gamifica%C3%A7%C3%A3o-nas-empresas.png" className="card-img-top" alt="imagem sobre a gamificação"/>
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-          </div> 
-
-          </Col>
-          <Col>
-          <div className="card" style={{width : '18pm' }} >
-              <img src="https://blog.teclogica.com.br/wp-content/uploads/2017/10/gamifica%C3%A7%C3%A3o-nas-empresas.png" className="card-img-top" alt="imagem sobre a gamificação"/>
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-          </div> 
           
-          </Col>
-        </Row>
-      </Container>
+          <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+              <ol className="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img src="https://blog.engage.bz/wp-content/uploads/2019/08/Banner-blog-gamificacao-para-capacitar-equipe-comercial_Prancheta-1.jpg" className="d-block w-100" alt="..."/>
+                </div>
+                <div className="carousel-item">
+                  <img src="https://laboro.edu.br/wp-content/uploads/2019/07/gamificacao-educacao-ensinoip.jpg" className="d-block w-100" alt="..."/>
+                </div>
+                <div className="carousel-item">
+                  <img src="https://blog.engage.bz/wp-content/uploads/2019/08/Banner-blog-gamificacao-para-capacitar-equipe-comercial_Prancheta-1.jpg" className="d-block w-100" alt="..."/>
+                </div>
+              </div>
+              <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="sr-only">Previous</span>
+              </a>
+              <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="sr-only">Next</span>
+              </a>
+            </div>  
 
-           
-  
-           
-     </div>  
+
+            <form className="Container" >
+              <div className="form-group">
+                <label for="exampleFormControlInput1">Titulo do Curso</label>
+                <input text="nomeCurso" class="form-control" id="exampleFormControlInput1" placeholder="ex: Jogos de Matematica"/>
+              </div>
+              <div className="form-group">
+                <label for="exampleFormControlSelect1">Instituição</label>
+                <select className="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-primary btn-lg btn-block">Cadastrar</button>
+              <button type="button" class="btn btn-secondary btn-lg btn-block">Cancelar</button>
+            </form>
+            <div class="card">
+              <div class="card-header">
+                Featured
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Editar</a>
+                <a href="#" style={{background : red}} class="btn btn-primary">Excluir</a>
+                
+
+                
+              </div>
+            </div>
+            
+      </div>
+        
       
     )
 }
