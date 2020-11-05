@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Container,nav,button } from 'react';
 
-const Cursos = () => {
+const Dicas = () => {
     return (
         <div>
           
@@ -18,21 +18,15 @@ const Cursos = () => {
 
 
         <div class="container">
-
-            <div class="card">
-              <div class="card-header">
-                Featured
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Editar</a>
-                <a href="#"  class="btn btn-primary">Excluir</a>
-                
-
-                
-              </div>
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
+            </div>
+            
         </div>
             
       </div>
@@ -40,4 +34,4 @@ const Cursos = () => {
       
     )
 }
-export default Cursos;
+export default Dicas;

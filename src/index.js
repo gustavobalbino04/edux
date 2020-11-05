@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import CursosPriv from './pages/admin/cursopriv';
 import Cursos  from './pages/cursos'; 
+import Dicas from './pages/Dicas';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Cursos />
+    <Dicas/>
   </React.StrictMode>,
   document.getElementById('root')
 );
